@@ -42,6 +42,7 @@ print(my_car)  # Output: 2020 Blue Toyota Camry - 150 miles
 
 - `car.py` - Main Car class implementation
 - `demo.py` - Demonstration script showing Car usage
+- `test_car.py` - Test suite for the Car class
 - `.gitignore` - Git ignore rules for Python projects
 
 ## Testing AI and GitHub Integration
