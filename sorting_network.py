@@ -321,30 +321,7 @@ def get_optimal_small_network(n: int) -> SortingNetwork:
         net.add_layer([Comparator(1, 2)])
         return net
     
-    elif n == 5:
-        # Optimal: depth 5, size 9
-        net = SortingNetwork(5)
-        net.add_layer([Comparator(0, 1), Comparator(3, 4)])
-        net.add_layer([Comparator(2, 4)])
-        net.add_layer([Comparator(2, 3), Comparator(0, 1)])
-        net.add_layer([Comparator(0, 2), Comparator(1, 4)])
-        net.add_layer([Comparator(1, 3), Comparator(2, 3)])
-        return net
-    
-    elif n == 6:
-        # Optimal: depth 5, size 12
-        net = SortingNetwork(6)
-        net.add_layer([Comparator(1, 2), Comparator(4, 5)])
-        net.add_layer([Comparator(0, 2), Comparator(3, 5)])
-        net.add_layer([Comparator(0, 1), Comparator(3, 4), Comparator(2, 5)])
-        net.add_layer([Comparator(0, 3), Comparator(1, 4)])
-        net.add_layer([Comparator(2, 4), Comparator(1, 3), Comparator(2, 3)])
-        return net
-    
-    elif n == 8:
-        # Use bubble sort as a fallback for n=8 until we get the optimal network correct
-        return None
-    
+    # For n >= 5, use algorithmic approach
     return None
 
 
