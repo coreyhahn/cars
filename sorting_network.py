@@ -10,6 +10,7 @@ from typing import List, Tuple, Set
 from dataclasses import dataclass
 from itertools import permutations
 import math
+import random
 
 
 @dataclass
@@ -83,7 +84,6 @@ class SortingNetwork:
         # Test all permutations for small n (only feasible for n <= 8)
         if self.n > 8:
             # For larger n, test a large random sample
-            import random
             test_cases = [list(range(self.n)), list(range(self.n-1, -1, -1))]
             for _ in range(1000):
                 test = list(range(self.n))
